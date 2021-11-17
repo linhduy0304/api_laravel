@@ -16,3 +16,4 @@ use App\Http\Controllers\Controller;
 */
 
 Route::get('user', [Controller::class, 'getUser']);
+Route::get('get-user-product', [Controller::class, 'getUserProduct']);

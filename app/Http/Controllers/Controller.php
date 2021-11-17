@@ -19,4 +19,10 @@ class Controller extends BaseController
         
     }
 
+    function getUserProduct() {
+        $user = User::join('user_product', 'user.id', '=', 'user_product.user_id')
+        ->get();
+        return $user;
+    }
+
 }
